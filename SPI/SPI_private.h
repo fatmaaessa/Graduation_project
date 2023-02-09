@@ -43,25 +43,25 @@ typedef struct
 /******************************************************************************************/
 
 
-#define  SPI_CHPA                   0
-#define  SPI_CPOL                   1
-#define  SPI_MSTR                   2
-#define  SPI_BR0                    3
-#define  SPI_BR1                    4
-#define  SPI_BR2                    5
-#define  SPI_SPE                    6
-#define  SPI_LSBFIRST               7
-#define  SPI_SSI                    8
-#define  SPI_SSM                    9
-#define  RXONLY                     10
-#define  SPI_DFF                    11
+#define  SPI_CHPA                   0   // SPI_Clock Phase_PIN
+#define  SPI_CPOL                   1   // SPI_Clock polarity_PIN
+#define  SPI_MSTR                   2   // SPI_Master selection_PIN
+#define  SPI_BR0                    3   // SPI_Baud rate control0_PIN
+#define  SPI_BR1                    4   // SPI_Baud rate control1_PIN
+#define  SPI_BR2                    5   // SPI_Baud rate control2_PIN
+#define  SPI_SPE                    6   // SPI_enable_PIN
+#define  SPI_LSBFIRST               7   // SPI_Frame format_PIN
+#define  SPI_SSI                    8   // SPI_ Internal slave select_PIN
+#define  SPI_SSM                    9   // SPI_Software slave management_PIN
+#define  RXONLY                     10  // SPI_Receive only_PIN
+#define  SPI_DFF                    11  // SPI_ Data frame format_PIN
 /******************************************************************************************/
 
-#define  SPI1_TXEIE                 7
-#define  SPI1_RXNEIE                6
+#define  SPI1_TXEIE                 7   //SPI Tx buffer empty interrupt enable
+#define  SPI1_RXNEIE                6   //SPI RX buffer not empty interrupt enable
 
 /******************************************************************************************/
 
-#define  SPI_BSY                    7
+#define  SPI_BSY                    7   //SPI Busy flag
 
 #endif
