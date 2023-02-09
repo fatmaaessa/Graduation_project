@@ -19,6 +19,7 @@
 #define SCK1_PORT                   GPIO_PORTA
 #define SCK1_PIN                    PIN5
 
+/******************************************************************************************/
 
 /*
 *OPTIONS FOR ENABLE OR DISABLE
@@ -26,6 +27,7 @@
 *2-DISABLE
 */
 #define SP1_STATUS          SPI_ENABLE
+/******************************************************************************************/
 
 /*
 *OPTIONS FOR CLOCK PARITY AND PHASE
@@ -35,12 +37,17 @@
 *4-MODE3---->SET_2_BITS
 */
 #define SPI1_CLOCK_MODE     SPI_MODE3
+
+/******************************************************************************************/
+
 /*
 *OPTIONS FOR START COMMUNICATION
 *1-MASTER START
 *2-SLAVE  START
 */
 #define SPI1_MASTER_SLAVE   SPI_MASTER
+/******************************************************************************************/
+
 /*
 *OPTIONS FOR PRESCALLER
 *1-FPCLK_DIVIDED_BY_2
@@ -53,20 +60,26 @@
 *8-FPCLK_DIVIDED_BY_256
 */
 #define SPI1_PRESCALLER     SPI_FPCLK_DIVIDED_BY_4
+/******************************************************************************************/
+
 /*
 *OPTIONS FOR transmitted first
 *1-MSB
 *2-LSB
 */
 #define SPI1_DATA_ORDER     SPI_MSB_FIRST
+/******************************************************************************************/
 
 
 #define SPI1_SS_MANAGE      HW_SLAVE_MANAGEMENT
+/******************************************************************************************/
+
 /*options for data size
 *SPI1_16BIT_DATA
 *SPI1_8BIT_DATA
 */
 #define SPI1_DATA_SIZE      SPI_8BIT_DATA
+/******************************************************************************************/
 
 /*options for spi_interrupt
 *1- enable
